@@ -41,7 +41,7 @@ def run_bluetooth_communication(shared_state, lock):
                                              current_moving[0], current_moving[1],
                                              int(current_firing))
                     ser.write(data_packet)
-                    print(f"[蓝牙线程] 发送指令: {data_packet.hex(' ')} (缓冲区: {ser.out_waiting}字节)")
+                    # print(f"[蓝牙线程] 发送指令: {data_packet.hex(' ')} (缓冲区: {ser.out_waiting}字节)")
 
                     # 更新状态
                     last_moving = current_moving
